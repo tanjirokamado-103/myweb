@@ -1,7 +1,8 @@
 <html>
 <h1>Test!</h1>
 <script>
-window.opener.location.replace(“https://evil.com/");
+            if (window.opener) {
+                window.opener.location = 'https://evil.com/';
 </script>
 </html>
-[/code]
+
